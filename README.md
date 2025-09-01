@@ -1,3 +1,9 @@
+en cour de production
+
+vue qui reçoit les donnée de l'api provenant du back end (MVC-2) ) , ( interne a mon pc pour l'instant ) 
+
+pour le site epise 
+
 # Sae401
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.0.
