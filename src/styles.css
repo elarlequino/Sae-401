@@ -1,1 +1,329 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'coolvetica';
+  src: url(/font/Coolvetica.otf);
+}
+@font-face {
+  font-family: 'doctor';
+  src: url(/font/iInspirationalDoctor.ttf);
+}
+@keyframes boutonPulse {
+  from {
+    transform: translate(-9px, -9px);
+  }
+  50% {
+    transform: translate(0px, 0px); /* ou ajuste selon l'effet désiré */
+    box-shadow: none;
+  }
+  to {
+    transform: translate(-9px, -9px);
+  }
+}
+@keyframes boutonPulse_lil {
+  from {
+    transform: translate(-3px, -3px);
+  }
+  50% {
+    transform: translate(0px, 0px); /* ou ajuste selon l'effet désiré */
+    box-shadow: none;
+  }
+  to {
+    transform: translate(-3px, -3px);
+  }
+}
+
+#bouton_catalog {
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#bouton_catalog :visited {
+  color: #ffffff;
+}
+
+html,
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* TODO: hack car le site ne veux  pas prendretoute la largeur, flex semble en être la cause */
+body {
+  width: 100vw;
+  line-height: 1.7;
+}
+
+app-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+app-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: #55bdc6;
+  width: 100vw;
+  height: 15vh;
+  padding-top: 0px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.MenuNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/*/
+.row {
+display: flex;
+flex-direction: row;
+}
+/*/
+
+.LienNav {
+  text-decoration: none;
+  align-self: center;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.Logo_Epise {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.Logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.PP {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.Image {
+  width: 100%;
+}
+
+footer {
+  padding-bottom: 1vh;
+  height: 17vh;
+  width: 100vw;
+  color: #ffffff;
+  font-size: medium;
+  font-weight: lighter;
+  background-color: #55bdc6;
+}
+
+.MenuFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #ffffff;
+  margin: 0px;
+  height: 100%;
+}
+
+.MenuFooter a:visited {
+  color: #ffffff;
+}
+
+.ColoneFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  align-self: flex-end;
+}
+
+section {
+  box-shadow: -8px 0 0 -4px #55bdc6, 8px 0 0 -4px #55bdc6;
+  padding: 10px;
+  width: 90%;
+  margin: 10px;
+}
+
+h1 {
+  font-family: 'doctor';
+  font-size: 100px;
+  font-weight: lighter;
+  display: block;
+  text-align: center; /*/ Temporaire /*/
+}
+
+h2 {
+  font-family: 'arial';
+  white-space: nowrap;
+}
+
+h3 {
+  font-family: 'arial';
+}
+
+p,
+li,
+form {
+  font-family: 'coolvetica';
+}
+
+a {
+  text-decoration: none;
+  font-family: 'coolvetica';
+}
+
+.Titre {
+  width: 30%;
+  background-color: #e5e2e2;
+  padding: 10px;
+
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.texte {
+  text-align: left;
+}
+
+.Panier {
+  text-align: center;
+  color: #ffffff;
+}
+
+.stock-indisponible {
+  color: red;
+  font-weight: bold;
+}
+
+/* CSS MAX */
+
+.asset_box_1 {
+  height: 100px;
+  min-width: 100px;
+  padding: 10px;
+  background-color: #eeeeee;
+  color: #2e2e2e;
+  font-size: 24px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 0px solid #57abab;
+
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.asset_box_1:hover {
+  box-shadow: 8px 8px 0 #afafaf, 0 0 2px 2px #ffffff; /* Décale la "bordure" vers la droite et le bas + ombre blanche pour faire ressortir */
+
+  transform: translate(-8px, -8px); /* ou ajuste selon l'effet désiré */
+}
+
+.under_line {
+  display: inline-block; /* Nécessaire pour que transform fonctionne */
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.under_line:hover {
+  transform: translateY(-10px);
+}
+
+.bouton_anim {
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
+  box-shadow: none;
+}
+.bouton_anim:hover {
+  box-shadow: 8px 8px 0 #ffffff;
+  transform: translate(-9px, -9px); /* ou ajuste selon l'effet désiré */
+}
+
+.clicked-anim {
+  animation: boutonPulse 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.article_with_description {
+  display: inline-flex;
+  flex-direction: row; /* Passe en ligne */
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+  max-height: 250px;
+  max-width: 250px; /* largeur de base */
+
+  /* ↑ ↑ NOTE DE MAX !! atention ne pas changer trop c pête couille et mal fait */
+}
+
+.conteneur_article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.conteneur_article img {
+  width: auto; /* Ajuste la taille de l'image */
+  height: 150px; /* Garde les proportions de l'image */
+}
+
+.article_with_description {
+  width: 80%;
+  max-width: 600px; /* largeur agrandie */
+
+  /* 
+  ↑ ↑ NOTE DE MAX !! atention ne pas changer trop c pête couille et
+  plus la description est longue plus il faut agrandir la largeur 
+  */
+}
+
+.article_with_description .hid {
+  opacity: 1;
+  width: 300px; /* largeur visible, ajuste selon ton contenu */
+  pointer-events: auto;
+}
+
+.left-right {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.in_article {
+  display: flex;
+  flex-direction: column; /* Passe en colonne */
+  justify-content: center; /* Centre verticalement */
+  align-items: center; /* Aligne à gauche */
+  max-width: 100%; /* Assure que le conteneur ne dépasse pas la largeur de l'article */
+}
+
+span {
+  width: 3%;
+}
+
+footer .LienNav {
+  margin: 0px;
+  min-width: 300px;
+}

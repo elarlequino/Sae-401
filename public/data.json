@@ -1,0 +1,182 @@
+[
+  {
+    "idArticles": 1,
+    "Titre": "Produit frais 1",
+    "Texte": "Produit frais 1",
+    "Categorie": 1,
+    "Filtre": "Produit frais",
+    "Stock": 0,
+    "Image": "Produit frais 1",
+    "Alt": "Produit frais 1"
+  },
+  {
+    "idArticles": 2,
+    "Titre": "Conserves 1",
+    "Texte": "Conserves 1",
+    "Categorie": 1,
+    "Filtre": "Conserves",
+    "Stock": 582,
+    "Image": "Conserves 1",
+    "Alt": "Conserves 1"
+  },
+  {
+    "idArticles": 5,
+    "Titre": "Article 1",
+    "Texte": "Article 1",
+    "Categorie": 4,
+    "Filtre": "Aucun",
+    "Stock": 0,
+    "Image": "Article 1",
+    "Alt": "Article 1"
+  },
+  {
+    "idArticles": 6,
+    "Titre": "Article 2",
+    "Texte": "Article 2",
+    "Categorie": 4,
+    "Filtre": "Aucun",
+    "Stock": 0,
+    "Image": "Article 2",
+    "Alt": "Article 2"
+  },
+  {
+    "idArticles": 7,
+    "Titre": "Annonce 3",
+    "Texte": "Annonce 3",
+    "Categorie": 4,
+    "Filtre": "Aucun",
+    "Stock": 0,
+    "Image": "Annonce 3",
+    "Alt": "Annonce 3"
+  },
+  {
+    "idArticles": 9,
+    "Titre": "T-shirt",
+    "Texte": "T-shirt noir",
+    "Categorie": 2,
+    "Filtre": "T-shirt",
+    "Stock": 3,
+    "Image": "T-shirt 1",
+    "Alt": "T-shirt noir"
+  },
+  {
+    "idArticles": 10,
+    "Titre": "Savon",
+    "Texte": "Savon",
+    "Categorie": 3,
+    "Filtre": "Savon",
+    "Stock": 3,
+    "Image": "Savon",
+    "Alt": "Savon"
+  },
+  {
+    "idArticles": 11,
+    "Titre": "Surgel\u00e9s",
+    "Texte": "Surgel\u00e9s",
+    "Categorie": 1,
+    "Filtre": "Surgel\u00e9s",
+    "Stock": 10,
+    "Image": "Surgel\u00e9s",
+    "Alt": "Surgel\u00e9s"
+  },
+  {
+    "idArticles": 12,
+    "Titre": "Plat cuisin\u00e9",
+    "Texte": "Plat cuisin\u00e9",
+    "Categorie": 1,
+    "Filtre": "Plat cuisin\u00e9",
+    "Stock": 2,
+    "Image": "Plat cuisin\u00e9",
+    "Alt": "Plat cuisin\u00e9"
+  },
+  {
+    "idArticles": 13,
+    "Titre": "P\u00e2tes",
+    "Texte": "P\u00e2tes",
+    "Categorie": 1,
+    "Filtre": "P\u00e2tes",
+    "Stock": 15,
+    "Image": "P\u00e2tes",
+    "Alt": "Mon amour de toujour (des P\u00e2tes)"
+  },
+  {
+    "idArticles": 14,
+    "Titre": "Riz",
+    "Texte": "Riz",
+    "Categorie": 1,
+    "Filtre": "Riz",
+    "Stock": 28,
+    "Image": "Riz",
+    "Alt": "Riz"
+  },
+  {
+    "idArticles": 15,
+    "Titre": "Jean",
+    "Texte": "Jean",
+    "Categorie": 2,
+    "Filtre": "Pantalon",
+    "Stock": 2,
+    "Image": "Jean",
+    "Alt": "Jean"
+  },
+  {
+    "idArticles": 16,
+    "Titre": "Shampoing",
+    "Texte": "Shampoing",
+    "Categorie": 3,
+    "Filtre": "Shampoing",
+    "Stock": 3,
+    "Image": "Shampoing",
+    "Alt": "Shampoing"
+  },
+  {
+    "idArticles": 17,
+    "Titre": "Gel douche",
+    "Texte": "Gel douche",
+    "Categorie": 3,
+    "Filtre": "Gel douche",
+    "Stock": 14,
+    "Image": "Gel douche",
+    "Alt": "Gel douche"
+  },
+  {
+    "idArticles": 18,
+    "Titre": "Dentifrice",
+    "Texte": "Dentifrice",
+    "Categorie": 3,
+    "Filtre": "Dentifrice",
+    "Stock": 26,
+    "Image": "Dentifrice",
+    "Alt": "Dentifrice"
+  },
+  {
+    "idArticles": 19,
+    "Titre": "Cr\u00e8me hydratante",
+    "Texte": "Cr\u00e8me hydratante",
+    "Categorie": 3,
+    "Filtre": "Cr\u00e8me hydratante",
+    "Stock": 11,
+    "Image": "Cr\u00e8me hydratante",
+    "Alt": "Cr\u00e8me hydratante"
+  },
+  {
+    "idArticles": 20,
+    "Titre": "Cr\u00e8me solaire",
+    "Texte": "Cr\u00e8me solaire",
+    "Categorie": 3,
+    "Filtre": "Cr\u00e8me solaire",
+    "Stock": 2,
+    "Image": "Cr\u00e8me solaire",
+    "Alt": "Cr\u00e8me solaire"
+  },
+  {
+    "idArticles": 21,
+    "Titre": "Maquillage",
+    "Texte": "Maquillage",
+    "Categorie": 3,
+    "Filtre": "Maquillage",
+    "Stock": 8,
+    "Image": "Maquillage",
+    "Alt": "Maquillage"
+  }
+]
