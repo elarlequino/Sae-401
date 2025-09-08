@@ -2,11 +2,14 @@
 <!-- <p>{{ element.Titre | json }}</p> -->
 
 <section class="conteneur_article">
-  @for(element of articles; track element.idAfficher){
+  @for(element of articles(); track element.idArticles){
   <article class="article_with_description">
     <div class="in_article">
       <h2>{{ element.Titre | json }}</h2>
-      <img src="{{ element.Image | json }}" alt="Image de {{ element.Alt | json }}" />
+      <img
+        src="http:mvc-v1/img/articles/{{ element.Image | json }}.jpg"
+        alt="Image de {{ element.Alt | json }}"
+      />
       Stock :
 
       <!--<span class="stock-indisponible">

@@ -1,6 +1,6 @@
 import { Component, signal, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { DataService } from './data';
+//import { RouterOutlet } from '@angular/router';
+import { DataService } from './service/data';
 import { CommonModule } from '@angular/common';
 import { Article } from './article/article';
 import { Footer } from './footer/footer';
@@ -8,7 +8,7 @@ import { Nav } from './nav/nav';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule, Article, Footer, Nav],
+  imports: [CommonModule, Article, Footer, Nav],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
