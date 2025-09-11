@@ -1,0 +1,19 @@
+<div>
+  <form class="row" (ngSubmit)="onFiltrer()">
+    <label class="left-right" for="filtre">Filtre :</label>
+    <select
+      name="filtre"
+      id="filtre"
+      class="left-right"
+      [value]="filtreSelectionne()"
+      (change)="onFiltreChange($event)"
+    >
+      @for(filtre of filtres; track filtre) {
+      <option [value]="filtre" [selected]="filtre === filtreSelectionne()">
+        {{ filtre }}
+      </option>
+      }</select
+    ><br />
+    <button type="submit" class="left-right">Filtrer</button>
+  </form>
+</div>

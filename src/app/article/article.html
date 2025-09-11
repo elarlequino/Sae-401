@@ -1,25 +1,41 @@
-<!-- <p>{{ element.Stock | json }}</p>  -->
-<!-- <p>{{ element.Titre | json }}</p> -->
-
+<h2>Catalogue</h2>
+<app-filtre (filtreChange)="onFiltreChange($event)"></app-filtre>
 <section class="conteneur_article">
-  @for(element of articles(); track element.idArticles){
-  <article class="article_with_description">
-    <div class="in_article">
-      <h2>{{ element.Titre | json }}</h2>
-      <img
-        src="http:mvc-v1/img/articles/{{ element.Image | json }}.jpg"
-        alt="Image de {{ element.Alt | json }}"
-      />
-      Stock :
+  @for(element of articlesFiltres(); track element.idArticles){ @if(element.Categorie !== 4) {
+  <div>
+    <article class="article_with_description">
+      <div class="in_article">
+        <h2>{{ element.Titre }}</h2>
+        <img
+          class="Image"
+          src="http://mvc-v1/img/articles/{{ element.Image }}"
+          alt="{{ element.Alt }}"
+        />
+        <p>
+          Stock : @if(element.Stock <= 0) {
+          <span class="stock-indisponible"> Indisponible </span>
+          } @else {
+          <span>
+            {{ element.Stock }}
+          </span>
+          }
+        </p>
+      </div>
 
-      <!--<span class="stock-indisponible">
-                                Indisponible
-                            </span>
-                          -->
-      <span>
-        {{ element.Stock | json }}
-      </span>
-    </div>
-  </article>
-  }
+      <div class="hid">
+        {{ element.Texte?.substring(0, 255) }}
+        <br />
+        ...........................................................
+        <br />
+        @if(element.Stock <= 0) {
+        <span class="stock-indisponible">Stock Indisponible</span>
+        } @else {
+        <button type="button" (click)="ajouterAuPanier(element.idArticles)">
+          Ajouter au panier
+        </button>
+        }
+      </div>
+    </article>
+  </div>
+  } }
 </section>
